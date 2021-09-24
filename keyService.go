@@ -44,7 +44,7 @@ func (svc *KeyService) setup(resp http.ResponseWriter, req *http.Request) {
 	siteKeys[siteKey.String()] = CreateReverseProxy(url)
 	urlKeys[url] = siteKey.String()
 
-	resp.Write([]byte("https://ultilabs.xyz/?key=" + siteKey.String()))
+	resp.Write([]byte("https://{change on use}/?key=" + siteKey.String()))
 
 	resp.WriteHeader(http.StatusOK)
 }
