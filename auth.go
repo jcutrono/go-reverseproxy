@@ -30,5 +30,5 @@ func basicAuth(pass http.HandlerFunc) http.HandlerFunc {
 }
 
 func validate(username, password string) bool {
-	return username == "ultilabs" && password == "Ultimate01"
+	return username == "{change on use}" && password == "{change on use}"
 }
